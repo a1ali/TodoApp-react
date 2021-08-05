@@ -1,13 +1,88 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-enter {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.task-enter input {
+  width: 300px;
+  height: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  font-family: roboto;
+  font-size: 1.3em;
+  
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+.task-enter button {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.tasks-container{
+  width: 500px;
+}
+
+.task-title {
+  margin-bottom: 20px;
+  font-family: roboto;
+  font-size: 1.5em;
+}
+
+.task {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  align-items: center;
+}
+
+.task h3 {
+  font-family: robot;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.task h1 {
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.submit-btn {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.edit-btn {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.task input {
+  height: 30px;
 }
